@@ -16,7 +16,9 @@ class BearTest < Minitest::Test
     assert_equal("Bella", @bear.name)
   end
 
-
+  def test_bear_has_stomach
+    assert_equal([], @bear.stomach)
+  end
 
 
 
