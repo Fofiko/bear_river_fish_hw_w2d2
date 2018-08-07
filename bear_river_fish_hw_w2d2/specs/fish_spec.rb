@@ -13,7 +13,6 @@ class FishTest < Minitest::Test
   end
 
 
-
   def test_fish_has_name
     assert_equal("Fallulah", @fish1.name)
     assert_equal("Felicity", @fish2.name)
