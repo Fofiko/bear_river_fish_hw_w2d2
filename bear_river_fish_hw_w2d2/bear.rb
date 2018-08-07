@@ -7,8 +7,5 @@ class Bear
     @name = name
   end
 
-  def name
-    return @name
-  end
 
 end
