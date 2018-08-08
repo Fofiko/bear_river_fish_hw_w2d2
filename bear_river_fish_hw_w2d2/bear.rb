@@ -8,6 +8,13 @@ class Bear
     @stomach = []
   end
 
+  def catches(fish, river)
+    @stomach  << fish
+    @river.fishes.remove_fish(fish)
+  end
+
+
+
 
 
 end
