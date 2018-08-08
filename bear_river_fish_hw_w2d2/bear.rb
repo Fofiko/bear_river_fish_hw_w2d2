@@ -10,7 +10,7 @@ class Bear
 
   def catches(fish, river)
     @stomach  << fish
-    @river.fishes.remove_fish(fish)
+    river.lose_fish(fish)
   end
 
 
