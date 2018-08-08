@@ -31,4 +31,14 @@ class RiverTest < Minitest::Test
   end
 
 
+## QUESTION this should be different from test_can_lose_fish, how?
+  def test_river_has_fish_count
+    @river.add_fish(@fish1)
+    @river.add_fish(@fish2)
+    @river.add_fish(@fish3)
+    # @river.lose_fish(@fish3)
+    assert_equal(3, @river.fish_count)
+  end
+
+
 end
