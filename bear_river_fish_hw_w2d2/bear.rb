@@ -13,7 +13,9 @@ class Bear
     river.lose_fish(fish)
   end
 
-
+  def roar
+    return "Hello, hear me roar."
+  end
 
 
 
