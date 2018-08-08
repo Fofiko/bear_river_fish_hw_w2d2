@@ -35,7 +35,20 @@ class BearTest < Minitest::Test
   end
 
   def test_bear_can_roar
-    assert_equal("Hello, hear me roar.", @bear.roar)  
+    assert_equal("Hello, hear me roar.", @bear.roar)
   end
+
+
+## QUESTION is this a repeat of test_bear_can_catch_a_fish
+## we count stomach.length there too
+  def test_bear_can_count_fish
+    @bear.catches(@fish3, @river)
+    @bear.catches(@fish2, @river)
+    assert_equal(2, @bear.food_count)
+  end
+
+
+
+
 
 end

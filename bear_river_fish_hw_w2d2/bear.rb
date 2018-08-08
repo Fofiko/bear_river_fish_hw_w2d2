@@ -17,6 +17,9 @@ class Bear
     return "Hello, hear me roar."
   end
 
+  def food_count
+    @stomach.length()
+  end
 
 
 end
